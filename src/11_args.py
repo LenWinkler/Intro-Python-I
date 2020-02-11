@@ -58,10 +58,10 @@ print(f3(8))     # Should print 9
 # YOUR CODE HERE
 
 def f4(**kwargs):
-        print('kwargs', kwargs)
+    print(kwargs)
+    for arg in kwargs:
+        print(f'key: {arg}, value: {kwargs[arg]}')
         
-
-
 # Should print
 # key: a, value: 12
 # key: b, value: 30
@@ -79,4 +79,4 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
