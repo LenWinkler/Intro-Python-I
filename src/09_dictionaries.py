@@ -51,3 +51,5 @@ print(waypoints)
 # YOUR CODE HERE
 for dictionary in waypoints:
     print(dictionary.values())
+
+# python3 src/09_dictionaries.py
